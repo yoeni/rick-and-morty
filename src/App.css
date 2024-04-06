@@ -1,38 +1,97 @@
 .App {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
   text-align: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.list {
+  border: 1px solid rgb(154, 183, 209);
+  border-radius: 10px;
+  padding: 0;
+  height: 500px;
+  width: 350px;
+  overflow-y: auto;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.listItem {
+  display: flex;
+  padding: 5px;
+  color: #475569;
+  height: 60px;
+  border-bottom: 1px solid rgb(154, 183, 209);
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.listItemCheckbox {
+  border-color: red;
+}
+.listItemIconContainer {
+  display: flex;
+  align-items: center;
+  align-content: center;
+}
+.listItemIcon {
+  width: 50px;
+  height: 50px;
+  border-radius: 5px;
+  margin-left: 5px;
+}
+.listItemInfo {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  width: 100%;
+  margin-left: 10px;
+  height: 100%;
+}
+.listItemName{
+  font-size: large;
+  padding: 0px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  text-align: left;
+  height: 60%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+  width: 100%;
+  font-weight:900;
+}
+.listItemEpisode {
+  font-size: small;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  text-align: left;
+  align-items: start;
+  height: 40%;
+}
+.inputModule {
+  gap: 10px;
+  border: 1px solid rgb(154, 183, 209);
+  border-radius: 10px;
+  padding: 5;
+  height: 50px;
+  width: 350px;
+  overflow-y: hidden;
+  overflow-x:auto;
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
 }
-
-.App-link {
-  color: #61dafb;
+.inputModuleSelected{
+  background-color: gray;
+  width: max-content;
+  height: 45px;
+  border-radius: 10px;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.inputModuleInput{
+  height: 90%;
+  width: 340px;
+  border-width: 0px;
+  font-size: 35px;
+}
+.inputModuleInput:focus-visible {
+  
+  border-width: 0px;
+  outline-width: 0px;
 }
