@@ -13,7 +13,7 @@
   border-radius: 10px;
   padding: 0;
   height: 500px;
-  width: 350px;
+  width: 360px;
   overflow-y: auto;
 }
 .listItem {
@@ -55,7 +55,7 @@
   justify-content: flex-start;
   align-items: flex-end;
   width: 100%;
-  font-weight:900;
+  
 }
 .listItemEpisode {
   font-size: small;
@@ -69,29 +69,63 @@
   gap: 10px;
   border: 1px solid rgb(154, 183, 209);
   border-radius: 10px;
-  padding: 5;
+  padding: 5px;
   height: 50px;
   width: 350px;
-  overflow-y: hidden;
-  overflow-x:auto;
   display: flex;
-  justify-content: center;
+  overflow-y: hidden;
+  overflow-x: auto;
+  justify-content: flex-start;
   align-items: center;
-}
-.inputModuleSelected{
-  background-color: gray;
-  width: max-content;
-  height: 45px;
-  border-radius: 10px;
 }
 .inputModuleInput{
   height: 90%;
-  width: 340px;
+  min-width: 300px;
   border-width: 0px;
   font-size: 35px;
+  color: #475569;
 }
 .inputModuleInput:focus-visible {
   
   border-width: 0px;
   outline-width: 0px;
+}
+.inputModuleSelected{
+  background-size: cover;
+  background-position: center right,0;
+  height: 35px;
+  border-radius: 10px;
+  color: #485567;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  gap: 5px;
+  padding: 5px;
+  transition: 0.3s;
+  font-weight: 600  ;
+}
+.inputModuleSelected:hover {
+  background :  #E2E8F0 !important;
+  transition: 0.4s ;
+}
+.inputModuleSelectedName {
+  width: max-content;
+  display: flex;
+}
+.inputModuleDeselect{
+  text-align: center;
+  padding: 3px;
+  background-color: #94A3B8;
+  height: 30px;
+  width: 30px;
+  color: white;
+  border-width: 0px;
+  border-radius: 5px;
+}
+.handling {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
